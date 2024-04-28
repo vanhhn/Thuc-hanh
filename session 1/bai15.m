@@ -1,0 +1,11 @@
+clear all;
+close all;
+clc;
+T=1000;
+t=-T:T/39:T;
+A=zeros(size(t));
+A(t>=-T/2&t<=T/2)=1;
+plot(t,A,'b','Linewidth',2);
+xlabel('Thoi gian');
+ylabel('Bien do');
+legend('Do thi 1 xung chu nhat ');
