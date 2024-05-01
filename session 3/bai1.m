@@ -1,0 +1,16 @@
+clear all;
+close all;
+clc;
+T=5;
+f=1/T;
+A=1.5*5;
+fm=32*2*f;
+t=0:T/199:T;
+x=A*sin(2*pi*f*t);
+xm=A*sin(2*pi*fm*t);
+subplot(2,1,1);
+plot(t,x);
+title('tin hieu truoc lay mau');
+subplot(2,1,2);
+plot(t,xm);
+title('tin hieu sau lay mau');
